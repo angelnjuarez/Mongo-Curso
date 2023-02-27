@@ -1,0 +1,3 @@
+use("MisAngeles_store")
+
+db.productos.find()

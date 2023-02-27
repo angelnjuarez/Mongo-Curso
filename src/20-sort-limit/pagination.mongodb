@@ -1,0 +1,6 @@
+use("MisAngeles_store")
+
+db.categories
+    .find()
+    .skip(4) //paginación n donde n es el número de elementos que queremos saltar
+    .limit(2)

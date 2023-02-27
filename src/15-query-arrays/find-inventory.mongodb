@@ -1,0 +1,2 @@
+use("MisAngeles_store")
+db.inventory.find()

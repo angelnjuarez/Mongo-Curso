@@ -1,0 +1,7 @@
+use("MisAngeles_store")
+
+//Delete one
+//db.products.deleteOne( { _id: 1})
+
+//Delete many
+db.products.deleteMany( { price: 100} )

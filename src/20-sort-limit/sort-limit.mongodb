@@ -1,0 +1,6 @@
+use("sample_training")
+
+db.zips
+    .find( { pop: { $gte: 100 } } )
+    .sort( { pop: -1 } ) // 1 = ascending, -1 = descending
+    .limit( 5 )

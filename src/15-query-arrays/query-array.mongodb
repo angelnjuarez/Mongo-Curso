@@ -1,0 +1,25 @@
+use("MisAngeles_store")
+
+//$in obj, values y arrays, es como un OR
+//db.inventory.find({qty: {$in: [20, 25]}})
+//db.inventory.find({tags: {$in: ["electronics", "book"]}})
+//$nin funciona al revés de $in, donde no haya coincidencias
+
+//db.inventory.find({tags: "book"})
+//db.inventory.find({tags: ["school", "book"]}) //funciona como un AND pero respeta el orden
+
+// Arrays, sólo para array
+// $all,funciona como un AND
+//db.inventory.find({tags: {$all: ["book", "school"]}})
+
+//$size, por el tamaño del array
+//db.inventory.find({tags: {$size: 2}})
+
+//$elemMatch, para buscar dentro de un array
+// db.survey.find({
+//     results: {
+//         $elemMatch: {
+//             product: "xyz",
+//             score: {$gte: 7}
+//         }}
+//     })

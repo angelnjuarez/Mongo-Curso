@@ -1,0 +1,10 @@
+use("MisAngeles_store") //Si no está creada, la creada
+
+db.products.insertOne({
+    name: "product1",
+    price: 1000
+})
+db.products.insertOne({
+    name: "product2",
+    price: 100
+})

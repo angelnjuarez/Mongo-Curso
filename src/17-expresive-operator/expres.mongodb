@@ -1,0 +1,8 @@
+use("MisAngeles_store")
+
+// db.monthlyBudget.find({
+//     $expr: {
+//         //Aquellos que han gastado más de su presupuesto
+//         $gte: [ "$spent", "$budget" ]
+//     }
+// })

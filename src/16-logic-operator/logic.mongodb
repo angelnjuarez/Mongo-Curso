@@ -1,0 +1,44 @@
+use("sample_training")
+
+
+//AND Implicito
+// db.inspections.find({
+//     sector: "Tax Preparers - 891",
+//     result: "Unable to Locate"
+// }).count()
+
+//AND Explicito, todo va dentro de un array
+// db.inspections.find({
+//     $and: [
+//         { sector: "Tax Preparers - 891" },
+//         { result: "Unable to Locate" }
+//     ]
+// }).count()
+
+//OR
+// db.inspections.find({
+//     $or: [
+//         { sector: "Tax Preparers - 891" },
+//         { result: "Unable to Locate" }
+//     ]
+// }).count()
+
+//NOR
+// db.inspections.find({
+//     $nor: [
+//         { sector: "Tax Preparers - 891" },
+//         { result: "Unable to Locate" }
+//     ]
+//     } , {
+//     //Muestra result, pero no _id
+//     result: 1,
+//     _id: 0
+// })
+
+//NOT = {} directamente como atributo, no como array
+// db.inspections.find({
+//     result: { $not:
+//         { $regex: /Unable to Locate/ }
+//     }
+// })
+

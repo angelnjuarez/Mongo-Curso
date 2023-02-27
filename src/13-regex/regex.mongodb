@@ -1,0 +1,6 @@
+use("MisAngeles_store")
+
+//db.inventory.find({"item.description": {$regex: /LINE/i }}) //i mayusculas y minusculas
+//db.inventory.find({"item.description": {$regex: /LINE$/i }}) //$ termina en...
+//db.inventory.find({"item.description": {$regex: /^single/i }}) //^ comience con...
+db.inventory.find({"item.description": {$regex: /^s/im }}) // Incluye salto de linea

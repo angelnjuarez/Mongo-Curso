@@ -1,0 +1,14 @@
+use("MisAngeles_store")
+
+
+//eq explicito
+//db.inventory.find( { qty: { $eq: 20 } } )
+
+//eq implicito
+//db.inventory.find( { qty: 20 } )
+
+//eq subdocument
+//db.inventory.find( { "item.name": "ab" } )
+
+//ne
+db.inventory.find( { qty: { $ne: 20 } } )

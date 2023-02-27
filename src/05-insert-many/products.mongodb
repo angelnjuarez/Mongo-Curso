@@ -1,0 +1,29 @@
+use("MisAngeles_store")
+
+db.products.drop()
+
+db.products.insertMany([
+    {
+        _id: 1,
+        name: "Coca Cola",
+        price: 1.5
+    },
+    {
+        _id: 2,
+        name: "Pepsi",
+        price: 1.5
+    },
+    {
+        _id: 1,
+        name: "Manaos naranja",
+        price: 1
+    },
+    {
+        _id: 3,
+        name: "Manaos",
+        price: 1
+    }
+],
+    {
+        ordered: false
+    })
